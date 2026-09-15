@@ -32,18 +32,32 @@ export default function LandingPage() {
     motion.add('(prefers-reduced-motion: no-preference)', () => {
       const logo = page.querySelector('.landing-logo')
       const buttons = page.querySelectorAll('.language-button')
+      const decorations = page.querySelectorAll('.landing-decoration')
       const ornaments = page.querySelectorAll('.decor-blue-circles-right, .decor-red-cross-right, .decor-blue-cross-left')
 
-      gsap.set([logo, ...buttons], { opacity: 0, y: 14 })
+      gsap.set([logo, ...buttons, ...decorations], { autoAlpha: 0 })
       gsap.timeline({ defaults: { ease: 'power2.out' } })
-        .to(logo, { opacity: 1, y: 0, duration: 0.7, clearProps: 'opacity,transform' })
-        .to(buttons, { opacity: 1, y: 0, duration: 0.55, stagger: 0.12, clearProps: 'opacity,transform' }, '-=0.28')
+        .fromTo(decorations,
+          { autoAlpha: 0, y: 10, scale: 0.94 },
+          { autoAlpha: 1, y: 0, scale: 1, duration: 0.7, stagger: 0.055, clearProps: 'opacity,visibility,transform' },
+        )
+        .fromTo(logo,
+          { autoAlpha: 0, y: 20, scale: 0.97 },
+          { autoAlpha: 1, y: 0, scale: 1, duration: 0.85, clearProps: 'opacity,visibility,transform' },
+          0.2,
+        )
+        .fromTo(buttons,
+          { autoAlpha: 0, y: 18 },
+          { autoAlpha: 1, y: 0, duration: 0.72, stagger: 0.16, clearProps: 'opacity,visibility,transform' },
+          0.65,
+        )
 
       ornaments.forEach((element, index) => {
         gsap.to(element, {
           y: index === 1 ? -6 : 6,
           rotation: index === 1 ? -2 : 2,
           duration: 4.2 + index * 0.7,
+          delay: 1.7,
           ease: 'sine.inOut',
           repeat: -1,
           yoyo: true,

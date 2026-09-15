@@ -259,7 +259,10 @@
   line-height: 1.55;
 }
 
-.fact-sheet--ar .fact-card--10 p { margin-top: -6px; }
+.fact-sheet--ar .fact-card--10 p {
+  margin-top: -6px;
+  font-size: calc(clamp(9px, 1.51cqw, 13.9px) - 1px);
+}
 
 .fact-sheet--ar .fact-card__number {
   font-family: 'TikTok Sans', Arial, sans-serif;
