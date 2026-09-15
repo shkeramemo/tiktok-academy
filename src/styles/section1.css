@@ -1,0 +1,277 @@
+@font-face {
+  font-family: 'TikTok Sans Display';
+  src: url('/assets/fonts/section1/tiktok-sans-display-bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TikTok Sans Display';
+  src: url('/assets/fonts/section1/tiktok-sans-display-regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TikTok Sans Text';
+  src: url('/assets/fonts/section1/tiktok-sans-text-regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TikTok Sans';
+  src: url('/assets/fonts/section1/tiktok-sans-black.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TikTok Sans';
+  src: url('/assets/fonts/section1/tiktok-sans-bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Adelle Sans ARA';
+  src: url('/assets/fonts/section1/adelle-sans-ara-regular.otf') format('opentype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Adelle Sans ARA';
+  src: url('/assets/fonts/section1/adelle-sans-ara-semibold.otf') format('opentype');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Adelle Sans ARA';
+  src: url('/assets/fonts/section1/adelle-sans-ara-bold.otf') format('opentype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+.fact-sheet {
+  --card-number-size: clamp(24px, 6.27cqw, 58px);
+  width: min(100%, 920px);
+  margin-inline: auto;
+  padding: clamp(24px, 6.7vw, 58px) clamp(14px, 2.35vw, 24px) clamp(30px, 4vw, 52px);
+  background: #fff;
+  color: #050505;
+  container-type: inline-size;
+  font-family: 'TikTok Sans Text', Arial, sans-serif;
+}
+
+.fact-sheet__header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: start;
+  gap: clamp(12px, 2.5vw, 24px);
+}
+
+.fact-sheet__header h1 {
+  max-width: 17em;
+  margin: 0;
+  font-family: 'TikTok Sans Display', Arial, sans-serif;
+  font-size: clamp(24px, 5.71cqw, 52.6px);
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1;
+}
+
+.fact-sheet__brand {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: clamp(76px, 15vw, 140px);
+  text-align: end;
+}
+
+.fact-sheet__brand img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.fact-sheet__brand time {
+  display: block;
+  margin-top: clamp(8px, 1.7vw, 16px);
+  font-family: 'TikTok Sans Display', Arial, sans-serif;
+  font-size: clamp(9px, 1.65cqw, 15.2px);
+  white-space: nowrap;
+}
+
+.fact-sheet__introduction {
+  margin: clamp(15px, 2.4vw, 24px) 0 clamp(18px, 3.2vw, 28px);
+  font-family: 'TikTok Sans Display', Arial, sans-serif;
+  font-size: clamp(12px, 2.35cqw, 21.6px);
+  line-height: 1.3;
+}
+
+.fact-sheet__cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(6px, 1.7cqw, 16px);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.fact-card {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+  padding: clamp(7px, 2cqw, 19px);
+  border: 1px solid #8edbdc;
+  border-radius: clamp(5px, 1.3cqw, 12px);
+  background: #fff;
+}
+
+.fact-card:nth-child(4n + 1),
+.fact-card:nth-child(4n + 2) {
+  border-color: transparent;
+  background: #c5f6f5;
+}
+
+.fact-card__heading {
+  display: flex;
+  align-items: center;
+  gap: clamp(4px, 1.3cqw, 12px);
+  min-height: var(--card-number-size);
+}
+
+.fact-card__number {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  height: var(--card-number-size);
+  font-family: 'TikTok Sans Display', Arial, sans-serif;
+  font-size: var(--card-number-size);
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1;
+}
+
+.fact-card__heading h2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+  min-height: var(--card-number-size);
+  margin: 0;
+  font-family: 'TikTok Sans Display', Arial, sans-serif;
+  font-size: clamp(11px, 2.97cqw, 27.3px);
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.18;
+}
+
+.fact-card--multiline .fact-card__heading h2 { font-size: clamp(10px, 2.64cqw, 24.3px); }
+
+.fact-card__heading h2 span { display: block; }
+
+.fact-card p {
+  position: relative;
+  z-index: 1;
+  margin: clamp(3px, .7cqw, 7px) 0 0;
+  font-family: 'TikTok Sans Text', Arial, sans-serif;
+  font-size: clamp(9px, 1.57cqw, 14.5px);
+  font-weight: 400;
+  line-height: 1.26;
+}
+
+.fact-card--illustrated p { max-width: 78%; }
+
+.fact-card__icon {
+  position: absolute;
+  inset-inline-end: clamp(5px, 1.3cqw, 12px);
+  top: 50%;
+  width: clamp(43px, 12.1cqw, 112px);
+  height: auto;
+  transform: translateY(-38%);
+  object-fit: contain;
+}
+
+.fact-card--03 .fact-card__icon { top: 42%; }
+
+.fact-sheet--ar {
+  padding-top: clamp(20px, 4vw, 38px);
+  font-family: 'Adelle Sans ARA', Tahoma, Arial, sans-serif;
+}
+
+.fact-sheet--ar .fact-sheet__header h1 {
+  max-width: none;
+  margin-top: clamp(7px, 1.3vw, 13px);
+  font-family: 'Adelle Sans ARA', Tahoma, Arial, sans-serif;
+  font-size: clamp(16px, 3.36cqw, 31px);
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.25;
+}
+
+.fact-sheet--ar .fact-sheet__title-number {
+  display: inline-block;
+  font-family: 'TikTok Sans', Arial, sans-serif;
+  font-weight: 900;
+}
+
+.fact-sheet--ar .fact-sheet__brand { align-items: start; }
+.fact-sheet--ar .fact-sheet__brand time {
+  align-self: start;
+  font-family: 'TikTok Sans', Arial, sans-serif;
+  font-weight: 700;
+}
+
+.fact-sheet--ar .fact-sheet__introduction {
+  width: min(100%, 84cqw);
+  margin-inline: auto;
+  margin-top: clamp(22px, 3.7vw, 36px);
+  margin-bottom: clamp(18px, 3cqw, 28px);
+  font-family: 'Adelle Sans ARA', Tahoma, Arial, sans-serif;
+  font-size: clamp(13px, 2.69cqw, 24.8px);
+  font-weight: 400;
+  line-height: 1.38;
+}
+
+.fact-sheet--ar .fact-card__heading h2 {
+  font-family: 'Adelle Sans ARA', Tahoma, Arial, sans-serif;
+  font-size: clamp(10.5px, 2.69cqw, 24.8px);
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.16;
+}
+
+.fact-sheet--ar .fact-card p {
+  font-family: 'Adelle Sans ARA', Tahoma, Arial, sans-serif;
+  font-size: clamp(9px, 1.51cqw, 13.9px);
+  font-weight: 600;
+  line-height: 1.55;
+}
+
+.fact-sheet--ar .fact-card--10 p { margin-top: -6px; }
+
+.fact-sheet--ar .fact-card__number {
+  font-family: 'TikTok Sans', Arial, sans-serif;
+  font-weight: 900;
+}
+
+@media (max-width: 559px) {
+  .fact-sheet__header { grid-template-columns: 1fr; }
+  .fact-sheet__brand { grid-row: 1; }
+  .fact-sheet--ar .fact-sheet__brand { justify-self: end; }
+  .fact-card { overflow: visible; }
+  .fact-card--illustrated p { max-width: calc(100% - 48px); }
+  .fact-card__heading h2 span { display: inline; }
+  .fact-sheet--ar .fact-sheet__header h1 { font-size: clamp(16px, 3.36cqw, 31px); }
+}

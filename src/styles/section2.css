@@ -1,0 +1,256 @@
+@font-face {
+  font-family: 'TikTok Sans Display Section 2';
+  src: url('/assets/fonts/section2/tiktok-sans-display-bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TikTok Sans Display Section 2';
+  src: url('/assets/fonts/section2/tiktok-sans-display-regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TikTok Sans Text Section 2';
+  src: url('/assets/fonts/section2/tiktok-sans-text-regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Adelle Sans ARA Section 2';
+  src: url('/assets/fonts/section2/adelle-sans-ara-semibold.otf') format('opentype');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Adelle Sans ARA Section 2';
+  src: url('/assets/fonts/section2/adelle-sans-ara-bold.otf') format('opentype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TikTok Sans Section 2';
+  src: url('/assets/fonts/section2/tiktok-sans-bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+.content-page { width: 100%; }
+
+.safety-sheet {
+  width: min(100%, 920px);
+  margin-inline: auto;
+  padding: clamp(20px, 5.4cqw, 49px) clamp(13px, 3.02cqw, 28px) clamp(18px, 2.8cqw, 26px);
+  background: #c5f6f5;
+  color: #080808;
+  container-type: inline-size;
+  font-family: 'TikTok Sans Text Section 2', Arial, sans-serif;
+}
+
+.safety-sheet__header h2 {
+  margin: 0;
+  font-family: 'TikTok Sans Display Section 2', Arial, sans-serif;
+  font-size: clamp(24px, 6.43cqw, 55.7px);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.safety-sheet__header h2 span { display: block; }
+
+.safety-sheet__introduction {
+  margin-top: clamp(15px, 2.4cqw, 22px);
+  font-family: 'TikTok Sans Display Section 2', Arial, sans-serif;
+  font-size: clamp(11px, 2.43cqw, 21.1px);
+  font-weight: 400;
+  line-height: 1.18;
+}
+
+.safety-sheet__introduction p { margin: 0; }
+.safety-sheet__introduction p + p { margin-top: clamp(15px, 3.1cqw, 29px); }
+
+.safety-sheet__cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(7px, 1.35cqw, 13px);
+  margin: clamp(15px, 3.3cqw, 30px) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.safety-card {
+  min-width: 0;
+  padding: clamp(10px, 2.43cqw, 22px);
+  border-radius: clamp(7px, 1.1cqw, 11px);
+  background: #fff;
+}
+
+.safety-card__heading {
+  display: flex;
+  align-items: center;
+  gap: clamp(8px, 2.7cqw, 25px);
+  min-height: clamp(49px, 9.6cqw, 88px);
+}
+
+.safety-card__heading img {
+  flex: 0 0 auto;
+  display: block;
+  width: clamp(37px, 9.6cqw, 88px);
+  height: auto;
+  object-fit: contain;
+}
+
+.safety-card__heading h3 {
+  min-width: 0;
+  max-width: 6em;
+  margin: 0;
+  font-family: 'TikTok Sans Display Section 2', Arial, sans-serif;
+  font-size: clamp(13px, 3.82cqw, 33px);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.safety-card__copy {
+  font-family: 'TikTok Sans Text Section 2', Arial, sans-serif;
+  font-size: clamp(9px, 1.91cqw, 16.6px);
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.safety-card__copy p { margin: 0; }
+.safety-card__copy p + p,
+.safety-card__copy ul + p { margin-top: 1.28em; }
+
+.safety-card__copy ul {
+  margin: 1.28em 0 0;
+  padding-inline-start: 1.7em;
+}
+
+.safety-card__copy li { padding-inline-start: .05em; }
+
+.safety-sheet__footer {
+  position: relative;
+  min-height: clamp(107px, 20cqw, 184px);
+}
+
+.safety-sheet__transparency {
+  position: absolute;
+  inset-block-start: clamp(16px, 2.68cqw, 25px);
+  inset-inline-end: 0;
+  display: flex;
+  align-items: center;
+  gap: clamp(12px, 2.15cqw, 20px);
+  color: inherit;
+  text-align: end;
+  text-decoration: none;
+}
+
+.safety-sheet__transparency span {
+  font-family: 'TikTok Sans Display Section 2', Arial, sans-serif;
+  font-size: clamp(9px, 1.8cqw, 16.6px);
+  line-height: 1.15;
+}
+
+.safety-sheet__transparency img {
+  display: block;
+  width: clamp(61px, 11.2cqw, 103px);
+  height: auto;
+  aspect-ratio: 1;
+}
+
+.safety-sheet__transparency:hover span { text-decoration: underline; }
+.safety-sheet__transparency:focus-visible { outline: 3px solid #fe2c55; outline-offset: 4px; border-radius: 3px; }
+
+.safety-sheet__brand {
+  position: absolute;
+  inset-block-end: 0;
+  left: 50%;
+  display: block;
+  width: clamp(88px, 15.2cqw, 140px);
+  height: auto;
+  transform: translateX(-50%);
+}
+
+.safety-sheet__date {
+  position: absolute;
+  inset-block-end: 0;
+  inset-inline-end: 0;
+  font-family: 'TikTok Sans Display Section 2', Arial, sans-serif;
+  font-size: clamp(9px, 1.64cqw, 15px);
+  white-space: nowrap;
+}
+
+.safety-sheet--ar {
+  font-family: 'Adelle Sans ARA Section 2', Tahoma, Arial, sans-serif;
+  padding-top: clamp(20px, 6.8cqw, 62px);
+}
+
+.safety-sheet--ar .safety-sheet__header h2 {
+  padding-inline: clamp(0px, 3.7cqw, 34px);
+  font-family: 'Adelle Sans ARA Section 2', Tahoma, Arial, sans-serif;
+  font-size: clamp(18px, 4.82cqw, 41.7px);
+  font-weight: 700;
+  line-height: 1.48;
+  text-align: right;
+}
+
+.safety-sheet--ar .safety-sheet__introduction {
+  margin-top: clamp(9px, 1.8cqw, 17px);
+  padding-inline: clamp(0px, 5.5cqw, 51px);
+  font-family: 'Adelle Sans ARA Section 2', Tahoma, Arial, sans-serif;
+  font-size: clamp(11px, 2.68cqw, 23.2px);
+  font-weight: 600;
+  line-height: 1.34;
+  text-align: right;
+}
+
+.safety-sheet--ar .safety-sheet__introduction p + p { margin-top: 0; }
+.safety-sheet--ar .safety-sheet__cards { margin-top: clamp(15px, 5.55cqw, 51px); }
+
+.safety-sheet--ar .safety-card { padding-bottom: clamp(6px, 1cqw, 9px); }
+.safety-sheet--ar .safety-card__heading { min-height: clamp(49px, 8.35cqw, 77px); }
+
+.safety-sheet--ar .safety-card__heading { gap: clamp(8px, 2.2cqw, 20px); }
+.safety-sheet--ar .safety-card__heading h3 {
+  max-width: none;
+  font-family: 'Adelle Sans ARA Section 2', Tahoma, Arial, sans-serif;
+  font-size: clamp(10px, 3.04cqw, 26.2px);
+  font-weight: 700;
+  line-height: 1.17;
+}
+
+.safety-sheet--ar .safety-card__copy {
+  font-family: 'Adelle Sans ARA Section 2', Tahoma, Arial, sans-serif;
+  font-size: clamp(9px, 1.79cqw, 15.5px);
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.safety-sheet--ar .safety-card__copy ul { margin-top: .48em; padding-inline-start: 1.3em; }
+.safety-sheet--ar .safety-card__copy p + p,
+.safety-sheet--ar .safety-card__copy ul + p { margin-top: 1.1em; }
+
+.safety-sheet--ar .safety-sheet__transparency { inset-inline-start: auto; inset-inline-end: 0; }
+.safety-sheet--ar .safety-sheet__transparency span { font-family: 'TikTok Sans Section 2', Arial, sans-serif; }
+.safety-sheet--ar .safety-sheet__date { inset-inline-start: auto; inset-inline-end: 0; font-family: 'TikTok Sans Section 2', Arial, sans-serif; }
+
+@media (max-width: 559px) {
+  .safety-sheet__header h2 span { display: inline; }
+  .safety-sheet__header h2 span + span::before { content: ' '; }
+  .safety-sheet__cards { margin-top: 18px; }
+  .safety-card__heading { gap: 6px; min-height: 0; margin-bottom: 8px; }
+  .safety-sheet__footer { min-height: 115px; }
+  .safety-sheet--ar .safety-sheet__header h2 { padding-inline: 0; }
+  .safety-sheet--ar .safety-sheet__introduction { padding-inline: 0; }
+  .safety-sheet--ar .safety-card__heading { gap: 6px; }
+}

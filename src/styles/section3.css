@@ -1,0 +1,258 @@
+@font-face {
+  font-family: 'TikTok Sans Display Section 3';
+  src: url('/assets/fonts/section3/tiktok-sans-display-bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TikTok Sans Display Section 3';
+  src: url('/assets/fonts/section3/tiktok-sans-display-medium.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TikTok Sans Display Section 3';
+  src: url('/assets/fonts/section3/tiktok-sans-display-regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TikTok Sans Text Section 3';
+  src: url('/assets/fonts/section3/tiktok-sans-text-regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TikTok Sans Text Section 3';
+  src: url('/assets/fonts/section3/tiktok-sans-text-bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Adelle Sans ARA Section 3';
+  src: url('/assets/fonts/section3/adelle-sans-ara-regular.otf') format('opentype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Adelle Sans ARA Section 3';
+  src: url('/assets/fonts/section3/adelle-sans-ara-semibold.otf') format('opentype');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Adelle Sans ARA Section 3';
+  src: url('/assets/fonts/section3/adelle-sans-ara-bold.otf') format('opentype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TikTok Sans Section 3';
+  src: url('/assets/fonts/section3/tiktok-sans-bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+.wellbeing-sheet {
+  width: min(100%, 920px);
+  margin-inline: auto;
+  padding: clamp(18px, 5.4vw, 50px) clamp(12px, 2.1vw, 20px) 0;
+  background: #fff;
+  color: #080808;
+  container-type: inline-size;
+  font-family: 'TikTok Sans Text Section 3', Arial, sans-serif;
+}
+
+.wellbeing-sheet__header h2 {
+  margin: 0;
+  font-family: 'TikTok Sans Display Section 3', Arial, sans-serif;
+  font-size: clamp(24px, 7.36cqw, 67.7px);
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+}
+
+.wellbeing-sheet__header h2 span { display: block; }
+
+.wellbeing-sheet__introduction {
+  margin-top: clamp(12px, 2.2cqw, 20px);
+  font-family: 'TikTok Sans Display Section 3', Arial, sans-serif;
+  font-size: clamp(11px, 2.44cqw, 22.4px);
+  font-weight: 500;
+  line-height: 1.18;
+  text-align: center;
+}
+
+.wellbeing-sheet__introduction p { margin: 0; }
+.wellbeing-sheet__introduction p + p { margin-top: clamp(13px, 2.6cqw, 24px); }
+
+.wellbeing-sheet__cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(7px, 1.75cqw, 16px);
+  margin: clamp(16px, 4.7cqw, 43px) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.wellbeing-card {
+  min-width: 0;
+  padding: clamp(9px, 2.1cqw, 19px);
+  border: 1px solid #111;
+  border-radius: clamp(8px, 1.6cqw, 15px);
+  background: #fff;
+}
+
+.wellbeing-card__heading {
+  display: flex;
+  align-items: center;
+  gap: clamp(6px, 1.6cqw, 15px);
+  min-height: clamp(39px, 8.3cqw, 76px);
+}
+
+.wellbeing-card__heading img {
+  flex: 0 0 auto;
+  display: block;
+  width: clamp(31px, 8.15cqw, 75px);
+  height: auto;
+  object-fit: contain;
+}
+
+.wellbeing-card__heading h3 {
+  min-width: 0;
+  margin: 0;
+  font-family: 'TikTok Sans Display Section 3', Arial, sans-serif;
+  font-size: clamp(11px, 3.14cqw, 28.9px);
+  font-weight: 700;
+  line-height: 1.08;
+  overflow-wrap: break-word;
+}
+
+.wellbeing-card__copy {
+  margin-top: clamp(3px, .7cqw, 7px);
+  font-family: 'TikTok Sans Text Section 3', Arial, sans-serif;
+  font-size: clamp(9px, 2.09cqw, 19.2px);
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.wellbeing-card__copy p { margin: 0; }
+.wellbeing-card__copy p + p { margin-top: 1.25em; }
+
+.wellbeing-card__copy ul {
+  margin: 0;
+  padding-inline-start: 1.7em;
+  list-style-type: disc;
+}
+
+.wellbeing-card--2 .wellbeing-card__copy ul { margin-top: 1.15em; }
+.wellbeing-card__copy li { padding-inline-start: 0; }
+.wellbeing-card__copy strong { font-weight: 700; }
+
+.wellbeing-sheet__footer {
+  position: relative;
+  min-height: clamp(72px, 12.5cqw, 115px);
+}
+
+.wellbeing-sheet__footer img {
+  position: absolute;
+  left: 50%;
+  bottom: clamp(18px, 3.2cqw, 30px);
+  display: block;
+  width: clamp(88px, 15.2cqw, 140px);
+  height: auto;
+  transform: translateX(-50%);
+}
+
+.wellbeing-sheet__footer time {
+  position: absolute;
+  inset-inline-end: 0;
+  bottom: clamp(23px, 4.3cqw, 40px);
+  font-family: 'TikTok Sans Display Section 3', Arial, sans-serif;
+  font-size: clamp(9px, 1.75cqw, 16px);
+  white-space: nowrap;
+}
+
+.wellbeing-sheet--ar {
+  padding-top: clamp(12px, 4.8vw, 44px);
+  font-family: 'Adelle Sans ARA Section 3', Tahoma, Arial, sans-serif;
+}
+
+.wellbeing-sheet--ar .wellbeing-sheet__header h2 {
+  font-family: 'Adelle Sans ARA Section 3', Tahoma, Arial, sans-serif;
+  font-size: clamp(21px, 6.13cqw, 56.4px);
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.wellbeing-sheet--ar .wellbeing-sheet__introduction {
+  margin-top: clamp(8px, 1.6cqw, 15px);
+  padding-inline: clamp(0px, 4.5cqw, 42px);
+  font-family: 'Adelle Sans ARA Section 3', Tahoma, Arial, sans-serif;
+  font-size: clamp(11px, 2.8cqw, 25.8px);
+  font-weight: 600;
+  line-height: 1.38;
+  text-align: right;
+}
+
+.wellbeing-sheet--ar .wellbeing-sheet__introduction p + p { margin-top: 0; }
+.wellbeing-sheet--ar .wellbeing-sheet__cards { margin-top: clamp(10px, 1.75cqw, 16px); }
+.wellbeing-sheet--ar .wellbeing-card__heading { gap: clamp(8px, 3.5cqw, 32px); }
+
+.wellbeing-sheet--ar .wellbeing-card__heading h3 {
+  font-family: 'Adelle Sans ARA Section 3', Tahoma, Arial, sans-serif;
+  font-size: clamp(10px, 2.8cqw, 25.8px);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.wellbeing-sheet--ar .wellbeing-card__copy {
+  margin-top: 0;
+  font-family: 'Adelle Sans ARA Section 3', Tahoma, Arial, sans-serif;
+  font-size: clamp(9px, 2.45cqw, 22.5px);
+  line-height: 1.28;
+  text-align: right;
+}
+
+.wellbeing-sheet--ar .wellbeing-card__copy ul { padding-inline-start: 1.25em; }
+.wellbeing-sheet--ar .wellbeing-card--2 .wellbeing-card__copy ul { margin-top: 0; }
+.wellbeing-sheet--ar .wellbeing-card__copy p + p { margin-top: 0; }
+.wellbeing-sheet--ar .wellbeing-sheet__footer img { bottom: clamp(23px, 4.2cqw, 39px); }
+.wellbeing-sheet--ar .wellbeing-sheet__footer time {
+  inset-inline-start: auto;
+  inset-inline-end: 0;
+  bottom: clamp(29px, 5.2cqw, 48px);
+  font-family: 'TikTok Sans Section 3', Arial, sans-serif;
+}
+
+@media (min-width: 560px) {
+  .wellbeing-sheet--en .wellbeing-card:nth-child(n + 3) { padding-bottom: clamp(4px, .7cqw, 7px); }
+}
+
+@media (max-width: 559px) {
+  .wellbeing-sheet__header h2 span { display: inline; }
+  .wellbeing-sheet__header h2 span + span::before { content: ' '; }
+  .wellbeing-sheet__introduction { text-align: start; }
+  .wellbeing-sheet__cards { margin-top: 18px; }
+  .wellbeing-card__heading { gap: 6px; min-height: 0; margin-bottom: 6px; }
+  .wellbeing-card__copy { margin-top: 0; }
+  .wellbeing-sheet--ar .wellbeing-sheet__introduction { padding-inline: 0; }
+  .wellbeing-sheet--ar .wellbeing-card__heading { gap: 6px; }
+}
