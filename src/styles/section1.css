@@ -235,7 +235,7 @@
 
 .fact-sheet--ar .fact-sheet__introduction {
   width: min(100%, 84cqw);
-  margin-inline: auto;
+  margin-inline: 0 auto;
   margin-top: clamp(22px, 3.7vw, 36px);
   margin-bottom: clamp(18px, 3cqw, 28px);
   font-family: 'Adelle Sans ARA', Tahoma, Arial, sans-serif;
